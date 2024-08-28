@@ -101,7 +101,10 @@ class LRUEvictor(Evictor):
         assert evicted_block is not None
         assert evicted_block_id is not None
         self.free_table.pop(evicted_block_id)
-
+        from vllm.logging import my_logger
+        my_logger.info(f"Evicting block {evicted_block_id} with content hash "
+                       f"{evicted_block.content_hash}")
+        
         return evicted_block_id, evicted_block.content_hash
 
     def add(self, block_id: int, content_hash: int, num_hashed_tokens: int,
