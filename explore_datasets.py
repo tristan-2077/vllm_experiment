@@ -1,3 +1,8 @@
+"""
+Total number of turns: 333709
+Average number of turns: 3.5446279674969463
+
+"""
 import json
 DATASET_PATH="/home/tristan/benchmark_datasets/ShareGPT_V3_unfiltered_cleaned_split.json"
 # load the dataset
