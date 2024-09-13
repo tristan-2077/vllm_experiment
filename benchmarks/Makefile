@@ -8,7 +8,7 @@
 #MODEL="facebook/opt-1.3b"
 MODEL="facebook/opt-2.7b"
 DATASET_PATH="/home/tristan/benchmark_datasets/ShareGPT_V3_unfiltered_cleaned_split.json"
-NUM_PROMPTS=20
+NUM_PROMPTS=200
 REPEAT_COUNT=10
 INPUT_LENGTH_RANGE="128:256"
 
